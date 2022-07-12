@@ -1,0 +1,25 @@
+<div class="container">
+    <div class="pagemessage">
+        <h3>This is Login Component</h3>
+    </div>
+    <form [formGroup]="loginForm">
+    <div>
+        <div class="pagemessage" *ngIf="!correctLoginPassword">
+            <h3>Incorrect login or password ...</h3>
+        </div>
+        <div class="form-group row mb-2">
+            <div class="form-group col-md-4">
+                <label for="loginId">Login</label>
+                <input class="form-control" id="loginId" type="text" placeholder="Login" formControlName="login" />
+            </div>
+            <div class="form-group col-md-4">
+                <label for="passwordId">Password</label>
+                <input class="form-control" id="passwordId" type="password" placeholder="Password" formControlName="password" />
+            </div>
+        </div>
+        <div>
+            <button class="btn btn-primary mr-3" type="submit" (click)="loginRequest()">Login</button>
+        </div>
+    </div>
+    </form>
+</div>

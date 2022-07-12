@@ -1,0 +1,21 @@
+<div class="container">
+    <div class="pagemessage">
+        <h3>This is Owner Component</h3>
+    </div>
+
+    <div class="postcard">
+        <div class="postcardText">
+            <div class="postcardText"><h3>Owner: {{ owner?.firstName }}</h3></div>
+            <p>Proszę wysyłać pytania na mój email: {{ owner?.email }}</p>
+        </div>      
+    </div>
+    <div (click)="showBooks()">
+        <a class="btn mr-2">Show/Hide Books</a>
+    </div>
+    <div *ngIf="changeVisibility">
+        <div *ngFor="let book of books">
+            <h3>{{ book.title }}</h3>
+            <a [routerLink]="['/book', book.id]" class="btn mr-2">See Book</a>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,19 @@
+
+<div class="container">
+    <div class="pagemessage">
+        <h3>Check our top positions !</h3>
+    </div>
+    <div class="row" >
+        <div *ngFor="let book of listOfBooks" class="col-md-3">
+            <div class="card" style="width: 13rem; height: auto;">
+                <img [src]="book?.imgURL" [alt]="book?.title" class="card-img-top">
+                <div class="card-body">
+                    <h5 class="card-title">{{ book.author }}</h5>
+                    <p class="card-text">{{ book.title }}</p>
+                    <p class="card-text">{{ book.shortDescription }}</p>
+                    <a [routerLink]="['/book', book.id]" class="btn mr-2">See Details</a>
+                </div>
+            </div>
+        </div> 
+    </div> 
+</div>

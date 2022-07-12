@@ -1,0 +1,25 @@
+<div class="container">
+<div class="pagemessage">
+    <h3>This is Book Details Component !</h3>
+</div>
+    <div class="postcard">
+        <div class="imgDisplay">
+            <img [src]="book?.imgURL" [alt]="book?.title" />
+        </div>
+        <div class="postcardText">
+            <div class="postcardText"><h3>Author: {{ book?.author }}</h3></div>
+            <div class="postcardText"><h3>{{ book?.title }}</h3></div>
+            <p>Genre: {{book.genre}}</p>
+            <p>Price: {{book.price}} PLN</p>
+            <p>Owner Email: {{ book?.userName }}</p>
+            <p>{{ book?.longDescription }}</p>
+            <a [routerLink]="['/owner', book?.userId]" class="btn mr-2">See Owner</a>
+        </div>
+        <div>
+            <a class="btn mr-2">Delete Book</a>
+        </div>    
+    </div>
+    <div>
+        <a [routerLink]="['/browse']" class="btn mr-2">Go To Browse</a>
+    </div>  
+</div>

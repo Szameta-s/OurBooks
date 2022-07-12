@@ -1,0 +1,27 @@
+.nav.navbar-nav {
+    font-size: 15px;
+}
+
+.navbar {
+    margin-top: 2px;
+    border-radius: 10px;
+    border:2px solid #e78b0aab;
+}
+
+#searchForm {
+    margin-right: 100px;
+}
+
+.navbar-brand {
+    font-size: 25px;
+}
+
+li.nav-item {
+    font-size: 20px;
+}
+
+ .dropdown-item {
+     color: rgb(45, 43, 43);
+     font-size: 18px;
+ }
+

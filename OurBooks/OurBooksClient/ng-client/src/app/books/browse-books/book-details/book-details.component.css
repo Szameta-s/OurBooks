@@ -1,0 +1,51 @@
+img {
+    height: 350px;
+    width: 235px;
+    border-radius: 5%;
+    border: 2px solid #000000ab;
+  }
+
+.postcard {
+    padding: 4px 4px;
+
+    box-shadow: 0 4px 21px -12px rgba(0, 0, 0, 0.66);
+    border-radius: 15px;
+    display: flex;
+    margin: 0 0 2rem 0;
+    overflow: hidden;
+    position: relative;
+    color: #ffffff;
+    background: linear-gradient(339deg, rgba(0, 0, 0, 0.418) 60%, rgba(248, 129, 38, 0.801) 100%) !important;
+}
+
+.postcard:hover {
+    background: linear-gradient(339deg, rgba(248, 129, 38, 0.801) 5%, rgba(0, 0, 0, 0.418) 40%) !important;
+}
+
+.title {
+    font-size: 1.2rem !important;
+  }
+
+.bookDescription {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-align: justify;
+  height: 100%;
+  color: rgb(187, 255, 0);
+}
+
+.postcardText {
+  padding: 3rem;
+  width: 100%;
+  display: inline;
+  text-shadow: 1px 1px 2px black, 0 0 10px rgb(233, 142, 5), 0 0 5px rgb(0, 0, 0);
+}
+
+.btn {
+  background-color: black !important;
+  margin-bottom: 10px;
+  border: 5px solid;
+  border-image-slice: 1;
+  transition: all .4s ease;
+  text-shadow: 0px 0px 0px black, 0 0 0px rgb(233, 142, 5), 0 0 0px rgb(0, 0, 0);
+}

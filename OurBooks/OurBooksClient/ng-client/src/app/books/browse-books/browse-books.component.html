@@ -1,0 +1,8 @@
+<div class="container">
+    <div class="pagemessage">
+        <h3>This is Browse Books Component</h3>
+    </div>
+    <div *ngFor="let book of listOfBooks" class="pagemessage">
+        <a [routerLink]="['/book', book.id]"><h3>{{book.title}}</h3></a>
+    </div>
+</div>

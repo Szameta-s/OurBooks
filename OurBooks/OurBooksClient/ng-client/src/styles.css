@@ -1,0 +1,49 @@
+/* You can add global styles to this file, and also import other style files */
+/* body {
+    background-image: url('/assets/images/lotr.svg');
+    background-size: cover;
+    
+ } */
+
+ .container {
+     margin-top: 20px;
+ }
+
+ .pagemessage {
+    width: auto;
+    margin: 10px 0px;
+    padding: 2px 5px;
+    opacity: 0.9;
+    text-align: center;
+    background: #222;
+    border: 1px solid #e78b0aab;
+  }
+
+h3 {
+    font-size: 30px solid;
+    font-weight: bold;
+    text-shadow: rgb(238, 170, 24) 1px 0px 0px, rgb(238, 170, 24) 0.540302px 0.841471px 0px, rgb(238, 170, 24) -0.416147px 0.909297px 0px, rgb(238, 170, 24) -0.989992px 0.14112px 0px, rgb(238, 170, 24) -0.653644px -0.756802px 0px, rgb(238, 170, 24) 0.283662px -0.958924px 0px, rgb(238, 170, 24) 0.96017px -0.279415px 0px;
+}
+
+.btn {
+    border: 5px solid;
+    border-image-slice: 1;
+    background: linear-gradient(339deg, rgba(105,106,107,0.908000700280112) 2%, rgba(179,79,2,1) 100%) !important;
+    -webkit-background-clip: text !important;
+    background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    border-image-source:  linear-gradient(339deg, rgba(105,106,107,0.908000700280112) 2%, rgba(179,79,2,1) 100%) !important; 
+    text-decoration: none;
+    transition: all .4s ease;
+  }
+  
+  .btn:hover, .btn:focus {
+    background: radial-gradient(circle, rgba(199,96,48,1) 25%, rgba(6, 6, 6, 0.26) 100%) !important;
+    -webkit-background-clip: none !important;
+    background-clip: none !important;
+    -webkit-text-fill-color: #fff !important;
+    border: 5px solid #fff !important; 
+    box-shadow: #222 1px 0 10px;
+    text-decoration: underline;
+  }
+  

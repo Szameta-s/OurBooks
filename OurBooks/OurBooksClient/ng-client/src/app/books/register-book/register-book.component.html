@@ -1,0 +1,65 @@
+<div class="container">
+    <div class="pagemessage">
+        <h3>This is Register Book Component !</h3>
+    </div>
+    <div *ngIf="!loggedIn" class="pagemessage">
+        <h3>You must be logged in to register a book !</h3>
+    </div>
+    <form [formGroup]="registerBookForm">
+        <div>
+            <div class="form-group row mb-2">
+                <div class="form-group row mb-2">
+                    <div class="form-group col-md-7">
+                        <label for="titleId">Enter title of your book:</label>
+                        <input class="form-control" id="titleId" type="text" placeholder="Title" formControlName="title" required />
+                    </div>
+                    <!-- <div class="alert alert-danger col-md-7" *ngIf="registerForm.get('email').invalid && (registerForm.get('email').dirty || registerForm.get('email').touched)">
+                        Please provide a valid email address.
+                    </div> -->
+                </div>
+                <div class="form-group row mb-2">
+                    <div class="form-group col-md-7">
+                        <label for="authorId">Enter author's name:</label>
+                        <input class="form-control" id="authorId" type="text" placeholder="Author" formControlName="author" required />
+                    </div>
+                </div>
+                <div class="form-group row mb-2">
+                    <div class="form-group col-md-7">
+                        <label for="genreId">Select genre:</label>
+                        <select id="genreId" class="form-group col-md-12" formControlName="genre">   
+                            <option *ngFor="let genre of genres" [ngValue]="genre">{{ genre }}</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group row mb-2">
+                    <div class="form-group col-md-7">
+                        <label for="shortId">Enter short description of your book:</label>
+                        <input class="form-control" id="shortId" type="text" placeholder="Short Description" formControlName="shortDescription" required />
+                    </div>
+                </div>
+                <div class="form-group row mb-2">
+                    <div class="form-group col-md-7">
+                        <label for="longId">Enter longer description of your book:</label>
+                        <input class="form-control" id="longId" type="text" placeholder="Long Description (Optional)" 
+                        formControlName="longDescription" required />
+                    </div>
+                </div>
+                <div class="form-group row mb-2">
+                    <div class="form-group col-md-7">
+                        <label for="priceId">Enter price you wish for renting your book:</label>
+                        <input class="form-control" id="priceId" type="text" placeholder="Price" formControlName="price" required />
+                    </div>
+                </div>
+                <div class="form-group row mb-2">
+                    <div class="form-group col-md-7">
+                        <label for="coverId">Enter type of book's cover :</label>
+                        <input class="form-control" id="coverId" type="text" placeholder="Cover" formControlName="cover" required />
+                    </div>
+                </div>
+                <div>
+                    <button class="btn btn-primary mr-3" type="submit" (click)="registerBookRequest()">Register</button>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
